@@ -48,3 +48,12 @@ plot(LENGTH~HEADLEN,data=bears)
 abline(HeadLengthModel)
 summary.lm(HeadLengthModel)
 ```
+
+## make a simple regression model for Head Width
+
+```{r}
+HeadWidthModel <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(HeadWidthModel)
+summary.lm(HeadWidthModel)
+```
