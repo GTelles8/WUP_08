@@ -1,7 +1,7 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
-date: "Fall 2020"
+author: "Gracie Telles"
+date: "Fall 2023"
 output: html_document
 ---
 
@@ -30,3 +30,14 @@ summary.lm(simp)
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
+## make a simple regression model for age
+
+```{r}
+AGEModel <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(AGEModel)
+summary.lm(AGEModel)
+```
+
+
+```
