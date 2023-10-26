@@ -75,3 +75,5 @@ plot(LENGTH~WEIGHT,data=bears)
 abline(WeightModel)
 summary.lm(WeightModel)
 ```
+
+The largest adjusted R squared value is 0.8434, which is found with The Head Length model.
