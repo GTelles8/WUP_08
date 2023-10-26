@@ -57,3 +57,14 @@ plot(LENGTH~HEADWTH,data=bears)
 abline(HeadWidthModel)
 summary.lm(HeadWidthModel)
 ```
+
+## make a simple regression model for Chest
+
+```{r}
+ChestModel <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(ChestModel)
+summary.lm(ChestModel)
+```
+
+
